@@ -1,7 +1,11 @@
 #include "Soldado.h"
 
-void Soldado::recogerArma()
+void Soldado::recogerArma(int armaElegida)
 {
+	// Arma al no ser abstracta me deja generarla en la memoria dinamica.
+	arma = new Arma();
+
+	arma->getArma(armaElegida);
 }
 
 void Soldado::dejarArma()

@@ -128,12 +128,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Arma.cpp" />
+    <ClCompile Include="ArsenalArmas.cpp" />
+    <ClCompile Include="Escopeta.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Revolver.cpp" />
+    <ClCompile Include="Rifle.cpp" />
     <ClCompile Include="Soldado.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Arma.h" />
+    <ClInclude Include="ArsenalArmas.h" />
     <ClInclude Include="Escopeta.h" />
     <ClInclude Include="Revolver.h" />
     <ClInclude Include="Rifle.h" />

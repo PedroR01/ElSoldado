@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
 	// Inicializacion usando la memoria dinamica c++
-	Soldado* elSoldado = new Soldado();
+	Soldado* soldadoRyan = new Soldado();
 
 	cout << "-== Bienvenido al campo de entrenamiento, Soldado ==-" << endl;
 	cout << "¿Que desea hacer?\n(presione el numero correspondiente a la opcion del menu)" << endl;
@@ -40,26 +40,22 @@ int main()
 
 	if (menuOptions == 1)
 	{
-		// Instancia de revolver para un futuro downcast
-		Revolver revolver;
 		// Input para seleccionar el arma a tomar
 		int pickupOptions = 0;
 
-		printf("Por favor, escoja el arma a utilizar:\n1.Revolver\n2.Rifle\n3.Escopeta\nX.Volver atras\n");
+		printf("\nPor favor, escoja el arma a utilizar:\n1.Revolver\n2.Rifle\n3.Escopeta\nX.Volver atras\n");
 		cout << "\n";
 		scanf_s("%d", &pickupOptions);
 
-		// Intento de downcasting - No parece tirar error ni NULL en consola
+		// Recoge el arma seleccionada
 		if (pickupOptions == 1)
-		{
-			Arma* elArma = dynamic_cast<Arma*>(&revolver);
-			if (elArma == nullptr)
-				cout << "Conversion fallida" << endl;
-		}
+			soldadoRyan->recogerArma(pickupOptions);
 		else if (pickupOptions == 2)
-			cout << "A2";
+			soldadoRyan->recogerArma(pickupOptions);
+		else if (pickupOptions == 3)
+			soldadoRyan->recogerArma(pickupOptions);
 		else
-			cout << "A3";
+			printf("\nVolviendo a atras...\n");
 	}
 
 	cout << "\n";

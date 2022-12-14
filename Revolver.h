@@ -3,11 +3,7 @@
 #define REVOLVER_H
 #include "Arma.h"
 
-class Arma;
-
-// ...\Revolver.h(11,1): error C2504: 'Arma': clase base sin definir
-
-class Revolver :public Arma
+class Revolver : public Arma
 {
 public:
 	Revolver();

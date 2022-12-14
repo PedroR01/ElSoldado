@@ -7,7 +7,10 @@ Revolver::Revolver()
 }
 Revolver::~Revolver()
 {
+	std::cout << "Has devuelto el revolver" << std::endl;
+	delete this;
 }
 void Revolver::disparo()
 {
+	std::cout << "PUM..." << std::endl;
 }

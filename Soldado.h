@@ -9,7 +9,7 @@ class Soldado
 private:
 	Arma* arma;
 public:
-	void recogerArma();
+	void recogerArma(int armaElegida);
 	void dejarArma();
 	std::string armaActual();
 	void disparar(); //puede ser string capaz

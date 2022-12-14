@@ -1,12 +1,18 @@
 #include "Arma.h"
+#include "ArsenalArmas.h"
 #include <iostream>
 
 Arma::Arma()
 {
-	std::cout << "Arma generada" << std::endl;
+	//armeria = new ArsenalArmas();
 }
 
-Arma::~Arma()
+Arma::~Arma() {}
+
+void Arma::disparo() {}
+
+void Arma::getArma(int armaElegida)
 {
-	delete this;
+	armeria->crearArma(armaElegida);
+	//std::cout << "LPM" << std::endl;
 }
