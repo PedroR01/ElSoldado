@@ -7,8 +7,8 @@ class Revolver : public Arma
 {
 public:
 	Revolver();
-	virtual ~Revolver();
-	virtual void disparo();
+	~Revolver() override;
+	virtual void disparo() override;
 };
 
 #endif // REVOLVER_H

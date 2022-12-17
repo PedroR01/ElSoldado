@@ -3,14 +3,14 @@
 
 Revolver::Revolver()
 {
-	std::cout << "Revolver agarrado" << std::endl;
+	this->nombre = "Revolver";
+	std::cout << "\nRevolver recogido" << std::endl;
 }
 Revolver::~Revolver()
 {
-	std::cout << "Has devuelto el revolver" << std::endl;
-	delete this;
+	std::cout << "\nHas devuelto el revolver" << std::endl;
 }
 void Revolver::disparo()
 {
-	std::cout << "PUM..." << std::endl;
+	std::cout << "\nPUM..." << std::endl;
 }

@@ -12,10 +12,10 @@ class Arma
 {
 protected:
 	std::string nombre;
-	ArsenalArmas* armeria;
 public:
 	Arma();
-	void getArma(int armaElegida);
+
+	std::string getArma();
 
 	// Metodos puros y virtuales
 	virtual ~Arma() = default;

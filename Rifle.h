@@ -7,8 +7,8 @@ class Rifle :public Arma
 {
 public:
 	Rifle();
-	virtual ~Rifle();
-	virtual void disparo();
+	~Rifle() override;
+	virtual void disparo() override;
 };
 
 #endif // RIFLE_H

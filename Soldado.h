@@ -2,7 +2,6 @@
 #ifndef SOLDADO_H
 #define SOLDADO_H
 #include<string>
-#include <iostream>
 #include "Arma.h"
 #include "ArsenalArmas.h"
 
@@ -14,8 +13,7 @@ private:
 public:
 	void recogerArma(int armaElegida);
 	void dejarArma();
-	std::string armaActual();
-	void disparar(); //puede ser string capaz
+	void armaActual(bool disparar);
 	void salir();
 };
 

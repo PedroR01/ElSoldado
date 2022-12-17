@@ -4,11 +4,10 @@
 
 Arma::Arma()
 {
-	//armeria = new ArsenalArmas();
+	this->nombre = "default";
 }
 
-void Arma::getArma(int armaElegida)
+std::string Arma::getArma()
 {
-	//armeria->crearArma(armaElegida);
-	//std::cout << "LPM" << std::endl;
+	return this->nombre;
 }

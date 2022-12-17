@@ -3,16 +3,16 @@
 
 Escopeta::Escopeta()
 {
-	std::cout << "Escopeta agarrada" << std::endl;
+	this->nombre = "Escopeta";
+	std::cout << "\nEscopeta recogido" << std::endl;
 }
 
 Escopeta::~Escopeta()
 {
-	std::cout << "Has devuelto la escopeta" << std::endl;
-	delete this;
+	std::cout << "\nHas devuelto la escopeta" << std::endl;
 }
 
 void Escopeta::disparo()
 {
-	std::cout << "¡PAAA!" << std::endl;
+	std::cout << "\n¡PAAA!" << std::endl;
 }

@@ -9,18 +9,19 @@ class Arma;
 enum class ArmasDisponibles
 {
 	revolver = 1,
-	rifle = 2,
-	escopeta = 3
+	rifle,
+	escopeta
 };
 
 // En esta clase es donde se crean las distintas armas
 class ArsenalArmas
 {
-public:
+private:
+	ArmasDisponibles* armasDispPtr;
 
+public:
 	ArmasDisponibles getArma();
-	void crearArma(int arma);
-	Arma* crearArma2(int arma);
+	Arma* crearArma(int& arma);
 };
 
 #endif // !ARSENALARMAS_H

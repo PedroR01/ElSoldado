@@ -3,16 +3,16 @@
 
 Rifle::Rifle()
 {
-	std::cout << "Rifle agarrado" << std::endl;
+	this->nombre = "Rifle";
+	std::cout << "\nRifle recogido" << std::endl;
 }
 
 Rifle::~Rifle()
 {
-	std::cout << "Has devuelto el rifle" << std::endl;
-	delete this;
+	std::cout << "\nHas devuelto el rifle" << std::endl;
 }
 
 void Rifle::disparo()
 {
-	std::cout << "PUM PUM PUM!..." << std::endl;
+	std::cout << "\nPUM PUM PUM!..." << std::endl;
 }

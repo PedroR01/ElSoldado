@@ -7,8 +7,8 @@ class Escopeta :public Arma
 {
 public:
 	Escopeta();
-	virtual ~Escopeta();
-	virtual void disparo();
+	~Escopeta() override;
+	virtual void disparo() override;
 };
 
 #endif // ESCOPETA_H
