@@ -2,10 +2,10 @@
 
 void Soldado::recogerArma(int armaElegida)
 {
-	// Arma al no ser abstracta me deja generarla en la memoria dinamica.
-	arma = new Arma();
-
-	arma->getArma(armaElegida);
+	arma0 = dynamic_cast<Arma*>(arma->crearArma2(armaElegida));
+	if (arma0 == nullptr)
+		std::cout << "conversion fallida" << std::endl;
+	//arma->crearArma(armaElegida);
 }
 
 void Soldado::dejarArma()
@@ -14,7 +14,6 @@ void Soldado::dejarArma()
 }
 void Soldado::disparar()
 {
-	this->arma->disparo();
 }
 std::string Soldado::armaActual()
 {

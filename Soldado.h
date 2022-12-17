@@ -2,12 +2,15 @@
 #ifndef SOLDADO_H
 #define SOLDADO_H
 #include<string>
+#include <iostream>
 #include "Arma.h"
+#include "ArsenalArmas.h"
 
 class Soldado
 {
 private:
-	Arma* arma;
+	Arma* arma0;
+	ArsenalArmas* arma;
 public:
 	void recogerArma(int armaElegida);
 	void dejarArma();

@@ -4,7 +4,9 @@
 #include "ArsenalArmas.h"
 #include<string>
 
-// Arma ya no es una clase abstracta
+class ArsenalArmas;
+
+// Clase abstracta
 // Se encarga de ser el "intermediario" entre la creación de armas y su interaccion con el soldado
 class Arma
 {
@@ -15,9 +17,9 @@ public:
 	Arma();
 	void getArma(int armaElegida);
 
-	// Estos metodos ya no son puros y virtuales
-	virtual ~Arma();
-	virtual void disparo();
+	// Metodos puros y virtuales
+	virtual ~Arma() = default;
+	virtual void disparo() = 0;
 };
 
 #endif // ARMA_H

@@ -1,6 +1,9 @@
 #pragma once
 #ifndef ARSENALARMAS_H
 #define ARSENALARMAS_H
+#include "Arma.h"
+
+class Arma;
 
 // Enum pensado para una futura implementacion
 enum class ArmasDisponibles
@@ -17,6 +20,7 @@ public:
 
 	ArmasDisponibles getArma();
 	void crearArma(int arma);
+	Arma* crearArma2(int arma);
 };
 
 #endif // !ARSENALARMAS_H
