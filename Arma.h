@@ -1,8 +1,10 @@
 #pragma once
 #ifndef ARMA_H
 #define ARMA_H
+#include "ArmaEnums.h"
 #include "ArsenalArmas.h"
-#include<string>
+#include <string>
+#include <map>
 
 class ArsenalArmas;
 
@@ -15,7 +17,15 @@ protected:
 public:
 	Arma();
 
-	std::string getArma();
+	/////////////////////  error LNK2019:
+	//static std::map<ArmaEnums::ClasesArmas, Arma*> obtenerLista();
+	//static Arma* tomarArma(int armaElegida);
+	/////////////////////
+
+	static std::map<ArmasDisponibles, Arma*> obtenerLista(); // RESOLVER IDENTIFICADOR/DETECCION DE ENUM CLASS ARMASDISPONIBLES (ArsenalArmas.h)
+	static Arma* tomarArma(int armaElegida);
+
+	std::string obtenerNombre();
 
 	// Metodos puros y virtuales
 	virtual ~Arma() = default;

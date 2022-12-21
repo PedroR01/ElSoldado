@@ -1,26 +1,33 @@
 #pragma once
 #ifndef ARSENALARMAS_H
 #define ARSENALARMAS_H
+#include "ArmaEnums.h"
 #include "Arma.h"
+#include <map>
 
 class Arma;
 
-// Enum pensado para una futura implementacion
 enum class ArmasDisponibles
 {
-	revolver = 1,
-	rifle,
-	escopeta
+	Revolver = 1,
+	Rifle,
+	Escopeta
 };
 
 // En esta clase es donde se crean las distintas armas
 class ArsenalArmas
 {
-private:
-	ArmasDisponibles* armasDispPtr;
-
 public:
-	ArmasDisponibles getArma();
+	~ArsenalArmas() = default;
+
+	/////////////////////  error LNK2019:
+	//static std::map<ArmaEnums::ClasesArmas, Arma*>obtenerListaArmas();
+	//static Arma* obtenerArma(ArmaEnums::ClasesArmas tipo);
+	/////////////////////
+
+	static std::map<ArmasDisponibles, Arma*>obtenerListaArmas();
+	static Arma* obtenerArma(ArmasDisponibles tipo);
+
 	Arma* crearArma(int& arma);
 };
 
