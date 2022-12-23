@@ -7,6 +7,7 @@
 #include <map>
 
 class ArsenalArmas;
+enum class ArmasDisponibles;
 
 // Clase abstracta
 // Se encarga de ser el "intermediario" entre la creación de armas y su interaccion con el soldado
@@ -22,7 +23,8 @@ public:
 	//static Arma* tomarArma(int armaElegida);
 	/////////////////////
 
-	static std::map<ArmasDisponibles, Arma*> obtenerLista(); // RESOLVER IDENTIFICADOR/DETECCION DE ENUM CLASS ARMASDISPONIBLES (ArsenalArmas.h)
+	//error LNK2019 (Problema actual DEL .CPP)
+	static std::map<ArmasDisponibles, Arma*> obtenerLista(); // RESOLVER IDENTIFICADOR/DETECCION DE ENUM CLASS ARMASDISPONIBLES (ArsenalArmas.h) (problema pasado)
 	static Arma* tomarArma(int armaElegida);
 
 	std::string obtenerNombre();

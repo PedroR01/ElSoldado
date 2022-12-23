@@ -1,5 +1,4 @@
 #include "ArsenalArmas.h"
-#include "ArmaEnums.h"
 #include "Revolver.h"
 #include "Rifle.h"
 #include "Escopeta.h"
@@ -32,6 +31,8 @@ Arma* obtenerArma(ArmaEnums::ClasesArmas tipo)
 */
 //////////////////////
 
+// POSIBILIDAD DE QUE ESTAS FUNCIONES SEAN LLAMADAS SIGUIENDO LA MISMA METODOLOGIA QUE MI LEGACY SOLDIER?
+// ARMA.CPP NO ESTA PUDIENDO OBTENER UNA CORRECTA REFERENCIA AL LLAMADO DE ESTAS FUNCIONES
 std::map<ArmasDisponibles, Arma*>obtenerListaArmas()
 {
 	Revolver* revolver;

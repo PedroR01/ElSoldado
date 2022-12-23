@@ -17,6 +17,8 @@ enum class ArmasDisponibles
 // En esta clase es donde se crean las distintas armas
 class ArsenalArmas
 {
+private:
+	//matriz o array para reemplazar el enum?
 public:
 	~ArsenalArmas() = default;
 

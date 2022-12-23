@@ -1,13 +1,16 @@
 #include "Arma.h"
-#include "ArsenalArmas.h"
-#include "ArmaEnums.h"
+//#include "ArsenalArmas.h"
 #include <iostream>
+
+//class ArsenalArmas;
+//enum class ArmasDisponibles;
 
 Arma::Arma()
 {
 	this->nombre = "default";
 }
 
+//error LNK2019, si comento las definiciones no me tira el error
 std::map<ArmasDisponibles, Arma*> Arma::obtenerLista()
 {
 	return ArsenalArmas::obtenerListaArmas();
