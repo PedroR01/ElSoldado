@@ -3,6 +3,7 @@
 
 void Soldado::recogerArma(int armaElegida)
 {
+	// Downcasting desde la clase base arma para tomar las propiedades del hijo seleccionado por el soldado
 	arma0 = dynamic_cast<Arma*>(arma->crearArma(armaElegida));
 	if (arma0 == nullptr)
 		std::cout << "CONVERSION FALLIDA (Soldado.cpp)" << std::endl;

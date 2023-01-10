@@ -13,6 +13,14 @@ Arma::Arma()
 //error LNK2019, si comento las definiciones no me tira el error
 std::map<ArmasDisponibles, Arma*> Arma::obtenerLista()
 {
+	/*
+	auto armas = ArsenalArmas::obtenerListaArmas();
+	for (int i = 0; i < armas.size() - 1; i++)
+	{
+		armaActual = dynamic_cast<Arma*>(arma[i]->obtenerListaArmas()); // No funciona porque el map devuelve 2 valores? O porque son de tipos diferentes?
+	}
+	*/
+
 	return ArsenalArmas::obtenerListaArmas();
 }
 

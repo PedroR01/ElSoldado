@@ -13,6 +13,9 @@ enum class ArmasDisponibles;
 // Se encarga de ser el "intermediario" entre la creación de armas y su interaccion con el soldado
 class Arma
 {
+private:
+	static Arma* armaActual; //??????
+	ArsenalArmas* arma[3];
 protected:
 	std::string nombre;
 public:
